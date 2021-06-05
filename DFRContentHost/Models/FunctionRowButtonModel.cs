@@ -4,6 +4,7 @@ using System;
 using System.Reactive;
 using WindowsInput;
 using WindowsInput.Native;
+using System.Threading;
 
 namespace DFRContentHost.Models
 {
@@ -37,8 +38,14 @@ namespace DFRContentHost.Models
         {
             try
             {
+                Random rnd = new Random();
+                // Bypass anti InputSimulator in some application - random length
+                //int number = rnd.Next(50, 100);
                 var sim = new InputSimulator();
-                sim.Keyboard.KeyPress(_keyCode);
+                sim.Keyboard.KeyDown(_keyCode);
+                //Thread.Sleep(number);
+                Thread.Sleep(50); // Bypass anti missclick & InputSimulator - 50 milliseconds 
+                sim.Keyboard.KeyUp(_keyCode);
             }
             catch (Exception)
             {
