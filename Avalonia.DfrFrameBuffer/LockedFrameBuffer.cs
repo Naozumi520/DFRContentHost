@@ -31,9 +31,9 @@ namespace Avalonia.DfrFrameBuffer
 
         public IntPtr Address { get; private set; }
 
-        public PixelSize Size => new PixelSize(2170, 60);
+        public PixelSize Size => new PixelSize(2008, 60);
 
-        public int RowBytes => 2170 * 4;
+        public int RowBytes => 2008 * 4;
 
         public Vector Dpi { get; }
 
@@ -41,7 +41,7 @@ namespace Avalonia.DfrFrameBuffer
 
         unsafe void VSync()
         {
-            int requestSize = 2170 * 60 * 3 + Marshal.SizeOf(typeof(DFR_HOSTIO_UPDATE_FRAMEBUFFER_HEADER));
+            int requestSize = 2008 * 60 * 3 + Marshal.SizeOf(typeof(DFR_HOSTIO_UPDATE_FRAMEBUFFER_HEADER));
             IntPtr RequestMemory = Marshal.AllocHGlobal(requestSize);
             if (RequestMemory == IntPtr.Zero)
             {
@@ -57,17 +57,17 @@ namespace Avalonia.DfrFrameBuffer
             {
                 binaryWriter.Write((ushort) 0);
                 binaryWriter.Write((ushort) 0);
-                binaryWriter.Write((ushort) 2170);
+                binaryWriter.Write((ushort) 2008);
                 binaryWriter.Write((ushort) 60);
                 binaryWriter.Write(DfrHostIo.DFR_FRAMEBUFFER_FORMAT);
                 binaryWriter.Write((uint) 0);
                 binaryWriter.Flush();
 
-                for (int w = 0; w < 2170; w++)
+                for (int w = 0; w < 2008; w++)
                 {
                     for (int h = 59; h >= 0; h--)
                     {
-                        byte* p = pFbContent + (2170 * h + w) * 4;
+                        byte* p = pFbContent + (2008 * h + w) * 4;
                         binaryWriter.Write(*p);
                         binaryWriter.Write(*(p + 1));
                         binaryWriter.Write(*(p + 2));

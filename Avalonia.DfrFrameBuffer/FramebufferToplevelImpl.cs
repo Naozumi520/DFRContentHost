@@ -57,7 +57,7 @@ namespace Avalonia.DfrFrameBuffer
         {
         }
 
-        public Size ClientSize => new Size(2170, 60);
+        public Size ClientSize => new Size(2008, 60);
         public IMouseDevice MouseDevice => BridgeFrameBufferPlatform.MouseDevice;
         public double Scaling => 1;
         public IEnumerable<object> Surfaces => new object[] {_fb};

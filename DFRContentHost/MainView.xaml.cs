@@ -25,17 +25,6 @@ namespace DFRContentHost
             AvaloniaXamlLoader.Load(this);
         }
 
-        private void OnEscClicked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                inputSimulator.Keyboard.KeyPress(VirtualKeyCode.ESCAPE);
-            }
-            catch (Exception)
-            {
-                // ULPI issue
-            }
-        }
 
         private void OnLockClicked(object sender, RoutedEventArgs e)
         {

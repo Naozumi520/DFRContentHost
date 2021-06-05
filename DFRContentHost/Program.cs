@@ -33,7 +33,7 @@ namespace DFRContentHost
                     grid.Background = new SolidColorBrush(Color.FromRgb(0, 0, 0));
                     grid.Children.Add(new MainView());
                     tl.Content = grid;
-                    tl.Width = 1085;
+                    tl.Width = 980;
                     tl.Height = 30;
                 });
             }
