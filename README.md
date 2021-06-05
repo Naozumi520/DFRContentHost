@@ -20,4 +20,4 @@ This application implements the user-mode host application for [DFRDisplayKm](ht
 
 Copyright (c) Bingxing Wang. All rights reserved.
 
-Licensed under the [MIT License](./LICENSE).
+Licensed under the [MIT License](https://github.com/imbushuo/DFRContentHost/blob/master/LICENSE.txt)
