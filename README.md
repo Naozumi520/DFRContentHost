@@ -8,6 +8,7 @@ What have changed:
 - Specific font for support language like Japanese and Chinese
 - Zero width in columnDefinition to prevent the f12 key from disappear out of touch bar after removing the esc key
 - Add Margin in both MediaTitle and MediaArtist to keep the space between MediaThumbnail and MediaTitle/MediaArtist
+- Add limit to prevent contents beyond from MediaTitle
 
 =---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 # Original readme document
