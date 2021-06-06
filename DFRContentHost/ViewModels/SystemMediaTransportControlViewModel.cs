@@ -174,7 +174,7 @@ namespace DFRContentHost.ViewModels
             try
             {
                 var prop = await _glbSmtcSession.TryGetMediaPropertiesAsync();
-                MediaTitle = prop.Title;
+                MediaTitle = prop.Title.Length > 54 ? prop.Title.Substring(0, 54) : prop.Title;
                 MediaArtist = prop.Artist;
 
                 if (prop.Thumbnail != null)
