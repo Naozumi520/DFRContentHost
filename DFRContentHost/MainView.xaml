@@ -21,9 +21,15 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="models:FunctionRowButtonModel">
                     <Border Margin="2.5,1" Width="75" Background="#FF292827" CornerRadius="4">
-                        <Button Width="65" Height="28" FontWeight="SemiBold"
+						<Button Width="75" Height="28" FontWeight="SemiBold"
                     BorderThickness="0" Background="#FF292827"
-                    Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}" />
+                    Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
+							<Button.Styles>
+								<Style Selector="Button /template/ ContentPresenter">
+									<Setter Property="CornerRadius" Value="4" />
+								</Style>
+							</Button.Styles>
+						</Button>
                     </Border>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
