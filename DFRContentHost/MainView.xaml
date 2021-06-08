@@ -50,7 +50,7 @@
                     </Grid.ColumnDefinitions>
                     <Image Grid.Column="0" Width="30" Height="30" Margin="5, 0" IsVisible="{Binding ThumbnailAvailable}" Source="{Binding MediaThumbnail}" />
                     <StackPanel Grid.Column="1">
-                        <TextBlock Foreground="White" Margin="5, 0" FontSize="11" FontFamily="Microsoft JhengHei" FontWeight="SemiBold" Text="{Binding MediaTitle}" />
+                        <TextBlock Foreground="White" MaxWidth="400" Margin="5, 0" FontSize="11" FontFamily="Microsoft JhengHei" FontWeight="SemiBold" Text="{Binding MediaTitle}" />
                         <TextBlock Foreground="White" Margin="5, 0" FontSize="8" FontFamily="Microsoft JhengHei" Text="{Binding MediaArtist}" />
                     </StackPanel>
                 </Grid>
