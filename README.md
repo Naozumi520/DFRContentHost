@@ -9,6 +9,7 @@ What have changed:
 - Zero width in columnDefinition to prevent the f12 key from disappear out of touch bar after removing the esc key
 - Add Margin in both MediaTitle and MediaArtist to keep the space between MediaThumbnail and MediaTitle/MediaArtist
 - Add limit to prevent contents beyond from MediaTitle
+- Keeps apply CornerRadius even though the button is pressed
 
 =---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 # Original readme document
