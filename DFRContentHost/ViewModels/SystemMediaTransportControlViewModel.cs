@@ -109,12 +109,6 @@ namespace DFRContentHost.ViewModels
         private async void OnSmtcSessionChanged(GlobalSystemMediaTransportControlsSessionManager sender,
             CurrentSessionChangedEventArgs args)
         {
-            if (_glbSmtcSession != null)
-            {
-                _glbSmtcSession.MediaPropertiesChanged -= OnMediaPropertiesChanged;
-                _glbSmtcSession.PlaybackInfoChanged -= OnPlaybackInfoChanged;
-            }
-
             _glbSmtcSession = _glbSmtcMgr.GetCurrentSession();
             if (_glbSmtcSession != null)
             {
