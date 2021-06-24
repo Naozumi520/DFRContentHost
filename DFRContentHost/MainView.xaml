@@ -20,9 +20,9 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="models:FunctionRowButtonModel">
-                    <Border Margin="2.5,1" Width="75" Background="#FF292827" CornerRadius="4">
+                    <Border Margin="2.5,1" Width="75" Background="#FFE96D43" CornerRadius="4">
 						<Button Width="75" Height="28" FontWeight="SemiBold"
-                    BorderThickness="0" Background="#FF292827"
+                    BorderThickness="0" Background="#FFE96D43"
                     Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
 							<Button.Styles>
 								<Style Selector="Button /template/ ContentPresenter">
@@ -65,9 +65,9 @@
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate DataType="models:FunctionRowButtonModel">
-                            <Border Margin="1" Width="60" Background="#FF292827" CornerRadius="4">
+                            <Border Margin="1" Width="60" Background="#FFE96D43" CornerRadius="4">
 								<Button Width="60" Height="28" BorderThickness="0" FontFamily="Segoe MDL2 Assets" IsEnabled="{Binding Enabled}"
-                      Background="#FF292827" Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
+                      Background="#FFE96D43" Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
 									<Button.Styles>
 										<Style Selector="Button /template/ ContentPresenter">
 											<Setter Property="CornerRadius" Value="4" />
@@ -87,9 +87,9 @@
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate DataType="models:FunctionRowButtonModel">
-                            <Border Margin="1" Width="60" Background="#FF292827" CornerRadius="4">
+                            <Border Margin="1" Width="60" Background="#FFE96D43" CornerRadius="4">
                                 <Button Width="60" Height="28" BorderThickness="0" FontFamily="Segoe MDL2 Assets" IsEnabled="{Binding Enabled}"
-                      Background="#FF292827" Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
+                      Background="#FFE96D43" Foreground="White" Content="{Binding Content}" Command="{Binding KeyCommand}">
 									<Button.Styles>
 										<Style Selector="Button /template/ ContentPresenter">
 											<Setter Property="CornerRadius" Value="4" />
@@ -101,10 +101,10 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
                 <Border Margin="0.5, 1" Width="10" />
-                <Border Margin="0.5, 1" Width="60" Background="#FF292827" CornerRadius="4">
+                <Border Margin="0.5, 1" Width="60" Background="#FFE96D43" CornerRadius="4">
                     <Button Width="60" Click="OnLockClicked"
                 BorderThickness="0" FontFamily="Segoe MDL2 Assets"
-                Background="#FF292827" Foreground="White">&#xE1F6;
+                Background="#FFE96D43" Foreground="White">&#xE1F6;
 						<Button.Styles>
 							<Style Selector="Button /template/ ContentPresenter">
 								<Setter Property="CornerRadius" Value="4" />
